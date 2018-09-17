@@ -6,19 +6,27 @@
   <meta name="renderer" content="webkit">
   <meta http-equiv="X-UA-Compatible" content="IE=edge" >
   <link rel="dns-prefetch" href="http://yoursite.com">
-  <title>Archives: 2016/6 | xǔyùlóng的博客</title>
+  <title>解决github+hexo+yilia评论插件的问题 | xǔyùlóng的博客</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-  <meta name="description" content="钻研H5开发,前端开发.">
-<meta name="keywords" content="h5,HTML,前端,Node.js,JavaScript,开发者,程序猿,程序媛,极客,编程,代码,开源,IT网站,Developer,Programmer,Coder,Geek,码农,IT搬砖,用户体验">
-<meta property="og:type" content="website">
-<meta property="og:title" content="xǔyùlóng的博客">
-<meta property="og:url" content="http://yoursite.com/archives/2016/06/index.html">
+  <meta name="description" content="解决github+hexo+yilia评论插件的问题">
+<meta name="keywords" content="yilia评论插件的问题 hexo评论插件的问题">
+<meta property="og:type" content="article">
+<meta property="og:title" content="解决github+hexo+yilia评论插件的问题">
+<meta property="og:url" content="http://yoursite.com/2016/06/07/解决github+hexo+yilia评论插件的问题/index.html">
 <meta property="og:site_name" content="xǔyùlóng的博客">
-<meta property="og:description" content="钻研H5开发,前端开发.">
+<meta property="og:description" content="解决github+hexo+yilia评论插件的问题">
 <meta property="og:locale" content="default">
+<meta property="og:image" content="http://yoursite.com/img/laibilidengl.png">
+<meta property="og:image" content="http://yoursite.com/img/laibilihuoq.png">
+<meta property="og:image" content="http://yoursite.com/img/lailibipeizhi.png">
+<meta property="og:image" content="http://yoursite.com/img/laibilifuzhi.png">
+<meta property="og:image" content="http://yoursite.com/img/laibilizhuye.png">
+<meta property="og:image" content="http://yoursite.com/img/laibiliniant.png">
+<meta property="og:updated_time" content="2018-09-17T07:38:04.000Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="xǔyùlóng的博客">
-<meta name="twitter:description" content="钻研H5开发,前端开发.">
+<meta name="twitter:title" content="解决github+hexo+yilia评论插件的问题">
+<meta name="twitter:description" content="解决github+hexo+yilia评论插件的问题">
+<meta name="twitter:image" content="http://yoursite.com/img/laibilidengl.png">
   
     <link rel="alternative" href="/atom.xml" title="xǔyùlóng的博客" type="application/atom+xml">
   
@@ -154,36 +162,84 @@
             <canvas data-colors="#eaeaea" data-sectionHeight="100" data-contentId="js-content" id="myCanvas1" class="anm-canvas"></canvas>
           </div>
           <div id="js-content" class="content-ll">
-            
-  
-  
+            <article id="post-解决github+hexo+yilia评论插件的问题" class="article article-type-post " itemscope itemprop="blogPost">
+  <div class="article-inner">
     
-    
-      
-      
-      <section class="archives-wrap">
-        <div class="archive-year-wrap">
-          <a href="/archives/2016" class="archive-year">2016</a>
-        </div>
-        <div class="archives">
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/06/07/解决github+hexo+yilia评论插件的问题/" class="archive-article-date">
-  	<time datetime="2016-06-07T02:08:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-06-07</time>
-</a>
-        </div>
-    	 
+      <header class="article-header">
+        
   
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/07/解决github+hexo+yilia评论插件的问题/">解决github+hexo+yilia评论插件的问题</a>
+    <h1 class="article-title" itemprop="name">
+      解决github+hexo+yilia评论插件的问题
     </h1>
   
 
-        <div class="article-info info-on-right">
-          
+        
+        <a href="/2016/06/07/解决github+hexo+yilia评论插件的问题/" class="archive-article-date">
+  	<time datetime="2016-06-07T02:08:27.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-06-07</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <p>##ps：效果还是不错的，支持QQ微信登录，支持表情，甚至gif动图评论！<br>插件采用韩国服务器的来必力评论插件–<a href="https://livere.com/" target="_blank" rel="noopener">https://livere.com/</a><br><a id="more"></a><br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">Hexo博客的Yilia主题中评论系统只提供了畅言、网易云跟帖、多说和Disqus。</span><br><span class="line"></span><br><span class="line">但是多说已经退出了江湖，网易云跟帖同样也不了了之，Disqus更不用说了，网址都进不去，岂不是更尴尬的存在？</span><br><span class="line"></span><br><span class="line">但是Yilia的作者给我们留了开源的接口，支持我们添加其他的插件！</span><br><span class="line"></span><br><span class="line">也有老哥创新性的加入了友言评论插件想试一试的同学可以看一下下面的链接!不过我没有成功，甚至在本地都没有成功，更不要说上传到Github了。</span><br><span class="line"></span><br><span class="line">我参考了这篇帖子http://blog.csdn.net/destinytaoer/article/details/78400021</span><br><span class="line"></span><br><span class="line">好的开始咱们的表演:</span><br></pre></td></tr></table></figure></p>
+<p>##一、注册账号，虽说livere是韩国的插件，但也支持qq邮箱登录注册，相当方便<br>过程如下：</p>
+<p><img src="/img/laibilidengl.png" alt=""></p>
+<p>##二、获取到了代码全部复制下来</p>
+<p><img src="/img/laibilihuoq.png" alt=""></p>
+<p>##三、本地配置，步骤如下：</p>
+<p><img src="/img/lailibipeizhi.png" alt=""></p>
+<p>把复制的代码粘贴在里面就行了</p>
+<p><img src="/img/laibilifuzhi.png" alt=""></p>
+<p>很重要的一点!是下面这一步！</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">修改hexo\themes\yilia\layout\_partial\article.ejs,找到</span><br><span class="line"></span><br><span class="line">&lt;% if (!index &amp;&amp; post.comments)&#123; %&gt;</span><br><span class="line">2</span><br><span class="line">在此下方添加下列代码：</span><br><span class="line"></span><br><span class="line">&lt;% if (theme.livere)&#123; %&gt;</span><br><span class="line">&lt;%- partial(&apos;post/livere&apos;, &#123;</span><br><span class="line">key: post.slug,</span><br><span class="line">title: post.title,</span><br><span class="line">url: config.url+url_for(post.path)</span><br><span class="line">&#125;) %&gt;</span><br><span class="line">&lt;% &#125; %&gt;</span><br></pre></td></tr></table></figure>
+<p>最后就是把插件放到主页面，进行加载，操作如下：</p>
+<p>打开你主题的设置项：_config.yml（注意不是hexo的_config.yml，而是yilia的文件夹里的_config.yml）</p>
+<p><img src="/img/laibilizhuye.png" alt=""></p>
+<p>最后粘贴id即可！</p>
+<p><img src="/img/laibiliniant.png" alt=""></p>
+<p>##四、最后一步上传到github，大功告成！</p>
+<figure class="highlight javascript"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo g -d</span><br></pre></td></tr></table></figure>
+<!--more-->
+
+      
+
+      
+        <div class="page-reward">
+          <a href="javascript:;" class="page-reward-btn tooltip-top">
+            <div class="tooltip tooltip-east">
+            <span class="tooltip-item">
+              赏
+            </span>
+            <span class="tooltip-content">
+              <span class="tooltip-text">
+                <span class="tooltip-inner">
+                  <p class="reward-p"><i class="icon icon-quo-left"></i>谢谢你请我吃糖果<i class="icon icon-quo-right"></i></p>
+                  <div class="reward-box">
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wzzf/alipayzf.png">
+                      <span class="reward-type">支付宝</span>
+                    </div>
+                    
+                    
+                    <div class="reward-box-item">
+                      <img class="reward-img" src="/img/wzzf/weixinzf.png">
+                      <span class="reward-type">微信</span>
+                    </div>
+                    
+                  </div>
+                </span>
+              </span>
+            </span>
+          </div>
+          </a>
+        </div>
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
 	<div class="article-tag tagcloud">
 		<i class="icon-price-tags icon"></i>
 		<ul class="article-tag-list">
@@ -203,61 +259,149 @@
 		</ul>
 	</div>
 
-          
+      
 
+      
+
+      
+        
+<div class="share-btn share-icons tooltip-left">
+  <div class="tooltip tooltip-east">
+    <span class="tooltip-item">
+      <a href="javascript:;" class="share-sns share-outer">
+        <i class="icon icon-share"></i>
+      </a>
+    </span>
+    <span class="tooltip-content">
+      <div class="share-wrap">
+        <div class="share-icons">
+          <a class="weibo share-sns" href="javascript:;" data-type="weibo">
+            <i class="icon icon-weibo"></i>
+          </a>
+          <a class="weixin share-sns wxFab" href="javascript:;" data-type="weixin">
+            <i class="icon icon-weixin"></i>
+          </a>
+          <a class="qq share-sns" href="javascript:;" data-type="qq">
+            <i class="icon icon-qq"></i>
+          </a>
+          <a class="douban share-sns" href="javascript:;" data-type="douban">
+            <i class="icon icon-douban"></i>
+          </a>
+          <a class="qzone share-sns" href="javascript:;" data-type="qzone">
+            <i class="icon icon-qzone"></i>
+          </a>
+          <a class="facebook share-sns" href="javascript:;" data-type="facebook">
+            <i class="icon icon-facebook"></i>
+          </a>
+          <a class="twitter share-sns" href="javascript:;" data-type="twitter">
+            <i class="icon icon-twitter"></i>
+          </a>
+          <a class="google share-sns" href="javascript:;" data-type="google">
+            <i class="icon icon-google"></i>
+          </a>
         </div>
-        <div class="clearfix"></div>
-    </header>
+      </div>
+    </span>
+  </div>
+</div>
+
+<div class="page-modal wx-share js-wx-box">
+    <a class="close js-modal-close" href="javascript:;"><i class="icon icon-close"></i></a>
+    <p>扫一扫，分享到微信</p>
+    <div class="wx-qrcode">
+      <img src="//pan.baidu.com/share/qrcode?url=http://yoursite.com/2016/06/07/解决github+hexo+yilia评论插件的问题/" alt="微信分享二维码">
+    </div>
+</div>
+
+<div class="mask js-mask"></div>
+      
+      <div class="clearfix"></div>
+    </div>
   </div>
 </article>
+
   
-    
-    
-    <article class="archive-article archive-type-post">
-  <div class="archive-article-inner">
-    <header class="archive-article-header">
-      	<div class="article-meta">
-	      	<a href="/2016/06/06/page/" class="archive-article-date">
-  	<time datetime="2016-06-06T04:20:25.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2016-06-06</time>
-</a>
+<nav id="article-nav">
+  
+    <a href="/2018/09/13/hello-world/" id="article-nav-newer" class="article-nav-link-wrap">
+      <i class="icon-circle-left"></i>
+      <div class="article-nav-title">
+        
+          Hello World
+        
+      </div>
+    </a>
+  
+  
+    <a href="/2016/06/06/page/" id="article-nav-older" class="article-nav-link-wrap">
+      <div class="article-nav-title">HTML前端学习入门笔记</div>
+      <i class="icon-circle-right"></i>
+    </a>
+  
+</nav>
+
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
         </div>
-    	 
-  
-    <h1 itemprop="name">
-      <a class="archive-article-title" href="/2016/06/06/page/">HTML前端学习入门笔记</a>
-    </h1>
-  
-
-        <div class="article-info info-on-right">
-          
-	<div class="article-tag tagcloud">
-		<i class="icon-price-tags icon"></i>
-		<ul class="article-tag-list">
-			 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color5">HTML</a>
-        		</li>
-      		 
-        		<li class="article-tag-list-item">
-        			<a href="javascript:void(0)" class="js-tag article-tag-list-link color3">前端</a>
-        		</li>
-      		
-		</ul>
-	</div>
-
-          
-
+        
+        
+        <div class="toc-container tooltip-left">
+            <i class="icon-font icon-category"></i>
+            <div class="tooltip tooltip-east">
+                <span class="tooltip-item">
+                </span>
+                <span class="tooltip-content">
+                    <div class="toc-article">
+                    目录，不存在的…
+                    </div>
+                </span>
+            </div>
         </div>
-        <div class="clearfix"></div>
-    </header>
-  </div>
-</article>
+        
+    </div>
+</aside>
+
+
+
   
-  
-    </div></section>
+  <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC8zOTc2OS8xNjI5Ng==">
+  <script type="text/javascript">
+   (function(d, s) {
+       var j, e = d.getElementsByTagName(s)[0];
+
+       if (typeof LivereTower === 'function') { return; }
+
+       j = d.createElement(s);
+       j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+       j.async = true;
+
+       e.parentNode.insertBefore(j, e);
+   })(document, 'script');
+  </script>
+<noscript> 为正常使用来必力评论功能请激活JavaScript</noscript>
+</div>
+<!-- City版安装代码已完成 -->
   
 
-    
+  
+  
+  
+
+  
+
+  
+
+  
 
 
           </div>
@@ -289,8 +433,8 @@
 	var yiliaConfig = {
 		mathjax: false,
 		isHome: false,
-		isPost: false,
-		isArchive: true,
+		isPost: true,
+		isArchive: false,
 		isTag: false,
 		isCategory: false,
 		open_in_new: false,
